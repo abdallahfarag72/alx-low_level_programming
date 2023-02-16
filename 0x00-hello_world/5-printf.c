@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
    * main - The start of the program
-   * Return: The sum of the two parameters
+   * Return: The integer 0
  */
 int main(void)
 {
