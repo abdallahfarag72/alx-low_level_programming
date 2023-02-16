@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -x c -S $CFILE -o $CFILE.o
+gcc -S $CFILE -o $CFILE.o
