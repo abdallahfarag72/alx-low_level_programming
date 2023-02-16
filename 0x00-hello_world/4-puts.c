@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - The start of the program
+ * Return: The sum of the two parameters
  */
 int main(void)
 {
