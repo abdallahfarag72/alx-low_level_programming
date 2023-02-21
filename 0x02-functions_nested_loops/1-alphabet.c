@@ -1,9 +1,8 @@
-#include "main.h"
 /**
- * main - The start of the program
- * Return: The integer 0
+ * print_alphabet - prints lowercase alphabet
+ * Return: void
 */
-int main(void)
+void print_alphabet(void)
 {
 	char x;
 
@@ -14,5 +13,4 @@ int main(void)
 		x = x + 1;
 	}
 	_putchar('\n');
-	return (0);
 }
