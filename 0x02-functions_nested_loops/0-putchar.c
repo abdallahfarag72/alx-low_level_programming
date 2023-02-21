@@ -1,13 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-
+#include "_putchar"
+#include "main.h"
 /**
  * main - The start of the program
  * Return: The integer 0
 */
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	return (0);
 }
