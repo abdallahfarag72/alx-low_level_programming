@@ -29,6 +29,6 @@ void print_mutltiples(void)
  */
 int main(void)
 {
-	print_times_table();
+	print_multiples();
 	return (0);
 }
