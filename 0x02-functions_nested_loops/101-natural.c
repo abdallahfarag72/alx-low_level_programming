@@ -21,6 +21,7 @@ void print_multiples(void)
 	_putchar((sum / 100) % 10 + '0');
 	_putchar((sum / 10) % 10 + '0');
 	_putchar(sum % 10 + '0');
+	_putchar('\n');
 }
 /**
  * main - check the code.
