@@ -22,3 +22,13 @@ void print_mutltiples(void)
 	_putchar((sum / 10) % 10 + '0');
 	_putchar(sum % 10 + '0');
 }
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_times_table();
+	return (0);
+}
