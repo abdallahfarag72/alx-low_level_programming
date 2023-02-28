@@ -19,7 +19,7 @@ void puts_half(char *str)
 	for (i = 0; i <= length; i++)
 	{
 		if (((length + 1) % 2 == 0 && i <= length / 2) ||
-				((length + 1) % 2 != 0 && i <= (length - 1) / 2))
+				((length + 1) % 2 != 0 && i <= (length) / 2))
 		{
 			continue;
 		}
