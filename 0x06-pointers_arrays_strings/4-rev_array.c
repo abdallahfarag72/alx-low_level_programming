@@ -19,5 +19,4 @@ void reverse_array(int *a, int n)
 		i++;
 		length--;
 	}
-	return (0);
 }
