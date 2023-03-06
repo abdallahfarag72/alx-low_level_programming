@@ -5,11 +5,11 @@
  * @s: pointer to buffer
  * @b: value to be copied
  * @n: bytes to be filled
- * Return: encoded string
+ * Return: pointer to buffer
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i, j;
+	int i;
 
 	i = 0;
 	while (i < n || s[i])
