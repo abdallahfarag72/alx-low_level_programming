@@ -39,12 +39,11 @@ int _atoi(char *s)
  */
 void print_int(int num)
 {
-	int i, sign;
+	int i, j, k, sign;
 	char temp, str[20];
 
 	i = 0;
 	sign = 1;
-	temp;
 	if (num < 0)
 	{
 		sign = -1;
@@ -61,13 +60,13 @@ void print_int(int num)
 		i++;
 	}
 	str[i] = '\0';
-	for (int j = 0; j < i / 2; j++)
+	for (j = 0; j < i / 2; j++)
 	{
 		temp = str[j];
 		str[j] = str[i - j - 1];
 		str[i - j - 1] = temp;
 	}
-	for (int k = 0; k < i; k++)
+	for (k = 0; k < i; k++)
 	{
 		_putchar(str[k]);
 	}
