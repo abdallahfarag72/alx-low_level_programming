@@ -22,5 +22,6 @@ int main(int argc, char **argv)
 		_putchar('\n');
 		i++;
 	}
+	_putchar('\n');
 	return (0);
 }
