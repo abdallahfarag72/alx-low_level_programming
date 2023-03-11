@@ -87,7 +87,7 @@ int main(int argc, char **argv)
 	{
 		_putchar('0');
 		_putchar('\n');
-		return (1);
+		return;
 	}
 	argc--;
 	while (argc--)
