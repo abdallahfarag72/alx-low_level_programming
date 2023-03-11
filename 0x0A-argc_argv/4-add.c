@@ -83,12 +83,6 @@ int main(int argc, char **argv)
 
 	i = 1;
 	res = 0;
-	if (argc < 2)
-	{
-		_putchar('0');
-		_putchar('\n');
-		return;
-	}
 	argc--;
 	while (argc--)
 	{
