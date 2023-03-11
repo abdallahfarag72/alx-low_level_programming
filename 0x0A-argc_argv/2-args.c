@@ -9,8 +9,7 @@ int main(int argc, char **argv)
 {
 	int i, j;
 
-	i = 1;
-	argc--;
+	i = 0;
 	while (argc--)
 	{
 		j = 0;
@@ -22,6 +21,5 @@ int main(int argc, char **argv)
 		_putchar('\n');
 		i++;
 	}
-	_putchar('\n');
 	return (0);
 }
