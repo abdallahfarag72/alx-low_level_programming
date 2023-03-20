@@ -1,4 +1,4 @@
 #ifndef ABSM
 #define ABSM
-#define ABS(x) (x < 0 ? (-(long long int)(x)) : (x))
+#define ABS(x) (x < 0 ? (-(x)) : (x))
 #endif /*ABSM*/
