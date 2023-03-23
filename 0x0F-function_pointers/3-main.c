@@ -10,9 +10,9 @@
  */
 int main(int argc, char **argv)
 {
-	char *operator, *num1, *num2;
+	char *operator;
 	int (*res_func)(int, int);
-	int res;
+	int res, num1, num2;
 
 	argc--;
 	if (argc != 3)
@@ -37,4 +37,5 @@ int main(int argc, char **argv)
 	}
 	res = res_func(num1, num2);
 	printf("%d\n", res);
+	return (0);
 }
