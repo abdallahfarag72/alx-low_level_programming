@@ -17,19 +17,23 @@ def island_perimeter(grid):
     The island doesn’t have “lakes” (water inside that
     isn’t connected to the water around the island).
     """
+    row = len(grid)
+    col = len(grid[0])
     perimeter = 0
 
-    for i in range(len(grid) - 1):
-        for j in range(len(grid[i]) - 1):
-            if grid[i][j] == 0 or i == 0 or j == 0:
+    for i in range(row):
+        for j in range(col):
+            if grid[i][j] == 0:
                 continue
 
-            is_head = grid[i - 1][j] + grid[i + 1][j] + \
-                grid[i][j + 1] + grid[i][j - 1] == 1
-
-            if is_head:
-                perimeter += 3
-            else:
-                perimeter += 2
+            perimeter += 4
+            if i > 0:
+                perimeter -= grid[i-1][j]
+            if j > 0:
+                perimeter -= grid[i][j-1]
+            if i < row - 1:
+                perimeter -= grid[i+1][j]
+            if j < col - 1:
+                perimeter -= grid[i][j+1]
 
     return perimeter
