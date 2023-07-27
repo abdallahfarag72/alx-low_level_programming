@@ -16,14 +16,15 @@ RM := rm -f
 
 all: $(NAME)
 
+COMPILER := $(CC)
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(COMPILER) $(CFLAGS) $(OBJ) -o $(NAME)
 
 main.o: main.c m.h
-	$(CC) $(CFLAGS) -c main.c -o main.o
+	$(COMPILER) $(CFLAGS) -c main.c -o main.o
 
 school.o: school.c m.h
-	$(CC) $(CFLAGS) -c school.c -o school.o
+	$(COMPILER) $(CFLAGS) -c school.c -o school.o
 
 clean:
 	$(RM) *~ $(NAME)
